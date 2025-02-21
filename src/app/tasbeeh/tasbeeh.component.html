@@ -1,0 +1,17 @@
+<header class="ramadan-header">
+  <h1>🌙 رمضان كريم 🌙</h1>
+  <p>كل سنة وأنتم طيبون 💖</p>
+</header>
+
+<div class="tasbeeh-container">
+  <h2>مسبحة إلكترونية</h2>
+  <p>الذكر الحالي: {{ currentZikr }}</p>
+  <h1>{{ count }}</h1>
+  <button (click)="incrementCount()">تسبيح</button>
+  <button (click)="resetCount()">اعادة</button>
+  <select (change)="changeZikr($event)">
+    @for (zikr of azkar; track $index) {
+    <option [value]="zikr">{{ zikr }}</option>
+    }
+  </select>
+</div>
