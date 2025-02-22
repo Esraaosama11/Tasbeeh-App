@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Tasbeeh-App/assets/b.jpg");
+  background-image: url("./assets/b.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
