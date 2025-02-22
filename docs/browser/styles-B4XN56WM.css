@@ -1,0 +1,28 @@
+body {
+  background-image: url(/assets/b.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ramadan-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd700;
+  animation: fadeInScale 1.5s ease-in-out forwards;
+}
+
+.ramadan-header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
